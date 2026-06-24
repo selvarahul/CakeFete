@@ -5,31 +5,31 @@ import { ArrowUp, Award, Check, Clock, Facebook, Instagram, Mail, MapPin, Menu, 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 //#region src/assets/cat-birthday.jpg
-var cat_birthday_default = "/assets/cat-birthday-dA77DYLM.jpg";
+var cat_birthday_default = "/CakeFete/assets/cat-birthday-dA77DYLM.jpg";
 //#endregion
 //#region src/assets/cat-anniversary.jpg
-var cat_anniversary_default = "/assets/cat-anniversary-W-dAQQvR.jpg";
+var cat_anniversary_default = "/CakeFete/assets/cat-anniversary-W-dAQQvR.jpg";
 //#endregion
 //#region src/assets/cat-kids.jpg
-var cat_kids_default = "/assets/cat-kids-sZF6dQlC.jpg";
+var cat_kids_default = "/CakeFete/assets/cat-kids-sZF6dQlC.jpg";
 //#endregion
 //#region src/assets/cat-wedding.jpg
-var cat_wedding_default = "/assets/cat-wedding-B_RgkTd2.jpg";
+var cat_wedding_default = "/CakeFete/assets/cat-wedding-B_RgkTd2.jpg";
 //#endregion
 //#region src/assets/feat-eggless.jpg
-var feat_eggless_default = "/assets/feat-eggless-BY4U8uRe.jpg";
+var feat_eggless_default = "/CakeFete/assets/feat-eggless-BY4U8uRe.jpg";
 //#endregion
 //#region src/assets/feat-chocolate.jpg
-var feat_chocolate_default = "/assets/feat-chocolate-D643jVDI.jpg";
+var feat_chocolate_default = "/CakeFete/assets/feat-chocolate-D643jVDI.jpg";
 //#endregion
 //#region src/assets/feat-blackforest.jpg
-var feat_blackforest_default = "/assets/feat-blackforest-DI_1XK7x.jpg";
+var feat_blackforest_default = "/CakeFete/assets/feat-blackforest-DI_1XK7x.jpg";
 //#endregion
 //#region src/assets/feat-redvelvet.jpg
-var feat_redvelvet_default = "/assets/feat-redvelvet-CjAJMbgW.jpg";
+var feat_redvelvet_default = "/CakeFete/assets/feat-redvelvet-CjAJMbgW.jpg";
 //#endregion
 //#region src/assets/feat-butterscotch.jpg
-var feat_butterscotch_default = "/assets/feat-butterscotch-CjV8bG4-.jpg";
+var feat_butterscotch_default = "/CakeFete/assets/feat-butterscotch-CjV8bG4-.jpg";
 //#endregion
 //#region src/data/site.ts
 /**
@@ -353,7 +353,7 @@ function Navbar() {
 }
 //#endregion
 //#region src/assets/hero-cake.png
-var hero_cake_default = "/assets/hero-cake-JXi-WI3N.png";
+var hero_cake_default = "/CakeFete/assets/hero-cake-JXi-WI3N.png";
 //#endregion
 //#region src/components/Hero.tsx
 function Hero() {
@@ -592,7 +592,7 @@ function Categories() {
 }
 //#endregion
 //#region src/assets/about.jpg
-var about_default = "/assets/about-DbJv6SO1.jpg";
+var about_default = "/CakeFete/assets/about-DbJv6SO1.jpg";
 //#endregion
 //#region src/components/About.tsx
 var features = [
@@ -737,7 +737,7 @@ function Counters() {
 }
 //#endregion
 //#region src/assets/who-we-are.jpg
-var who_we_are_default = "/assets/who-we-are-CwUgQ1s9.jpg";
+var who_we_are_default = "/CakeFete/assets/who-we-are-CwUgQ1s9.jpg";
 //#endregion
 //#region src/components/WhoWeAre.tsx
 var checklist = [
@@ -884,7 +884,7 @@ function Occasions() {
 }
 //#endregion
 //#region src/assets/why-choose.jpg
-var why_choose_default = "/assets/why-choose-D_2oZz9Y.jpg";
+var why_choose_default = "/CakeFete/assets/why-choose-D_2oZz9Y.jpg";
 //#endregion
 //#region src/components/WhyChooseUs.tsx
 function WhyChooseUs() {
