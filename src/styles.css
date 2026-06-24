@@ -1,0 +1,142 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+/* Brand fonts (self-hosted via @fontsource) */
+@import "@fontsource/playfair-display/500.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/playfair-display/800.css";
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-card: 20px;
+  --radius-image: 30px;
+  --radius-pill: 50px;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Brand palette */
+  --color-chocolate: var(--chocolate);
+  --color-dark-brown: var(--dark-brown);
+  --color-gold: var(--gold);
+  --color-light-gold: var(--light-gold);
+  --color-cream: var(--cream);
+  --color-beige: var(--beige);
+  --color-ink: var(--ink);
+  --color-subtle: var(--subtle);
+  --color-whatsapp: var(--whatsapp);
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+
+  --shadow-soft: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0px 15px 40px rgba(0, 0, 0, 0.12);
+  --shadow-large: 0px 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+:root {
+  --radius: 0.625rem;
+
+  /* Brand palette */
+  --chocolate: #3a241e;
+  --dark-brown: #2a1814;
+  --gold: #e6a32d;
+  --light-gold: #f7c55a;
+  --cream: #f8f4ec;
+  --beige: #faf7f0;
+  --ink: #2d2d2d;
+  --subtle: #666666;
+  --whatsapp: #25d366;
+
+  /* Semantic mapping */
+  --background: #f8f4ec;
+  --foreground: #2d2d2d;
+  --card: #ffffff;
+  --card-foreground: #2d2d2d;
+  --popover: #ffffff;
+  --popover-foreground: #2d2d2d;
+  --primary: #3a241e;
+  --primary-foreground: #ffffff;
+  --secondary: #faf7f0;
+  --secondary-foreground: #3a241e;
+  --muted: #faf7f0;
+  --muted-foreground: #666666;
+  --accent: #e6a32d;
+  --accent-foreground: #ffffff;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: #ffffff;
+  --border: #ece4d6;
+  --input: #ece4d6;
+  --ring: #e6a32d;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@utility shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+@utility shadow-medium {
+  box-shadow: var(--shadow-medium);
+}
+@utility shadow-large {
+  box-shadow: var(--shadow-large);
+}
+
+/* Swiper overrides */
+.swiper-pagination-bullet {
+  background-color: var(--chocolate);
+  opacity: 0.3;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--gold);
+  opacity: 1;
+}
